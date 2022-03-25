@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - My first website</title>
     <link href="styles.css" rel="stylesheet" />
+    <!-- css 파일 경로 지정 -->
     <style>
       html {
         background-color: tomato;
       }
       body {
-        margin: 0px;
-        padding: 20px;
+        margin: 10px;
         background-color: thistle;
         border: 2px solid black;
+        display: flex; /* 반응형 */
+        justify-content: space-evenly; /* 빈공간을 균일하게 나누어서 배치 */
+        align-items: center; /* 수직으로 중간 부분에 배치 */
+        height: 100vh;
+        flex-wrap: wrap; /* 화면크기가 줄어도 안에 있는 내용들이 줄어들지 않게 끔 해준다. */
       }
       div {
         height: 150px;
@@ -29,12 +34,15 @@
     </style>
   </head>
   <body>
-    <div></div>
-    <div></div>
-    <div></div>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <a href="#">link</a>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>
+      4
+      <span>hello</span>
+      <span>hello</span>
+      <span>hello</span>
+      <a href="#">link</a>
+    </div>
   </body>
 </html>
